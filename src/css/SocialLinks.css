@@ -1,0 +1,21 @@
+.social-icons {
+    background: var(--primary-color);
+    width: 2.3em;
+    height: 2.3em;
+    font-size: 1.2rem;
+    color: var(--secondary-font-dark-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: none;
+    box-shadow: -1px -1px 3px var(--lighter-dark-color),
+        2px 2px 5px var(--lighter-dark-color);
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+.social-icons:hover {
+    color: var(--secondary-font-color);
+    transform: scale(1.2);
+}

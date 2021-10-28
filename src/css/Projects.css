@@ -1,0 +1,109 @@
+.content-header {
+    text-align: center;
+    margin-top: 2%;
+    overflow: hidden;
+}
+
+.content-header__headings h1 {
+    font-size: 4rem;
+}
+
+.content-header__headings p {
+    color: var(--secondary-font-dark-color);
+}
+
+.content-header__projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    justify-content: center;
+    margin: 5% 5%;
+    position: relative;
+}
+
+.content-header__projects::before {
+    content: "WORK";
+    position: absolute;
+    top: -10%;
+    left: 0%;
+    font-size: 10rem;
+    font-weight: 700;
+    color: hsl(0, 1%, 16%);
+    z-index: -1;
+}
+
+.content-header__projects::after {
+    content: "PROJECTS";
+    position: absolute;
+    bottom: -5%;
+    right: 0%;
+    font-size: 10rem;
+    font-weight: 700;
+    color: hsl(0, 1%, 16%);
+    z-index: -1;
+}
+
+.content-header__headings .heading_text {
+    animation-name: headingAnim;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+}
+
+@keyframes headingAnim {
+    from {
+        transform: translateX(-5%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.content-header__headings p {
+    animation-name: headingTextAnim;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+}
+
+@keyframes headingTextAnim {
+    from {
+        transform: translateX(5%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content-header__projects::before {
+        font-size: 8rem;
+        top: -5%;
+    }
+    .content-header__projects::after {
+        font-size: 8rem;
+        bottom: -4%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .content-header__headings h1 {
+        font-size: 3.5rem;
+    }
+    .content-header__projects::before {
+        font-size: 7rem;
+        top: -2.5%;
+    }
+    .content-header__projects::after {
+        font-size: 7rem;
+        bottom: -2%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .content-header__headings h1 {
+        font-size: 2.5rem;
+    }
+    .content-header__headings p {
+        font-size: 0.8rem;
+    }
+}

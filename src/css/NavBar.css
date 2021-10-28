@@ -1,0 +1,112 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0em 5em;
+    width: 100%;
+    height: 7vh;
+    background-color: var(--secondary-color);
+    position: relative;
+}
+
+.navbar__items__holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar__items__holder a {
+    color: var(--secondary-font-color);
+}
+
+.navbar__items__holder a {
+    display: inline-block;
+    margin-left: 4em;
+    padding: 0.6em 1em;
+    transition: all 0.4s ease;
+}
+
+.navbar__items__holder li:first-child a {
+    margin-left: 0;
+}
+
+.navbar__items__holder a:hover {
+    background: var(--primary-color);
+}
+
+.navbar__items.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--font-red-light-color);
+    cursor: pointer;
+}
+.navbar__items__icon {
+    font-size: 1.3rem;
+    margin-right: 0.2em;
+    margin-top: 0.1em;
+    color: var(--primary-font-color);
+}
+.hamburger {
+    display: none;
+    font-size: 1.3rem;
+    color: var(--secondary-font-color);
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 0 3em;
+    }
+    .navbar__items__holder {
+        position: fixed;
+        right: -100%;
+        top: 7vh;
+        flex-direction: column;
+        background-color: var(--lighter-dark-color);
+        height: 93vh;
+        z-index: 3;
+        text-align: right;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.5s cubic-bezier(0.86, -0.15, 0.48, 1.17);
+    }
+
+    .navbar__items__holder li a {
+        margin-left: 0;
+        padding: 0 3em;
+    }
+    .navbar__items__holder.active {
+        right: 0%;
+        visibility: visible;
+        opacity: 1;
+    }
+    .navbar__items__holder li {
+        margin: 0;
+        padding: 1.5em 3em;
+    }
+    .hamburger {
+        display: block;
+        font-size: 2rem;
+    }
+    .navbar__items__icon {
+        font-size: 2rem;
+    }
+    .navbar__items.logo h3 {
+        font-size: 1.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        padding: 0 1em;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .navbar__items.logo h3 {
+        font-size: 1.5rem;
+    }
+    .navbar__items__icon {
+        font-size: 1.7rem;
+    }
+}

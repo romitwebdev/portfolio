@@ -1,0 +1,108 @@
+.card-holder {
+    background-color: var(--secondary-font-color);
+    padding: 0.6em;
+    position: relative;
+    overflow: hidden;
+    margin: 2em 2em;
+    text-align: left;
+}
+
+.card-holder img {
+    width: 100%;
+    height: 9em;
+}
+
+.card-holder h2,
+p,
+a {
+    color: var(--primary-color);
+}
+
+.card-holder > h2,
+.card-holder > p {
+    margin: 0.6em 0;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 0.6em;
+}
+
+.button a {
+    color: var(--secondary-font-color);
+    display: inline-block;
+    width: 100%;
+    padding: 0.6em;
+    background: var(--secondary-color);
+    text-align: center;
+    margin-left: 1px;
+    position: relative;
+    z-index: 1;
+}
+.button a:first-child {
+    margin-right: none;
+}
+
+.button a::before {
+    content: "";
+    position: absolute;
+    background-color: var(--font-red-light-color);
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    transform: scaleX(0);
+    transition: all 0.4s ease;
+    transform-origin: left;
+}
+
+.button a:hover {
+    color: var(--secondary-font-color);
+}
+.button a:hover::before {
+    transform: scaleX(1);
+}
+
+.card-holder::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(0, 1%, 16%);
+    top: 0;
+    left: 0;
+    z-index: 2;
+    animation: cardAnim;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.card-holder:nth-child(2)::before {
+    animation-delay: 0.1s;
+}
+.card-holder:nth-child(2)::before {
+    animation-delay: 0.3s;
+}
+.card-holder:nth-child(3)::before {
+    animation-delay: 0.5s;
+}
+.card-holder:nth-child(4)::before {
+    animation-delay: 0.7s;
+}
+.card-holder:nth-child(5)::before {
+    animation-delay: 0.9s;
+}
+
+@keyframes cardAnim {
+    from {
+        left: 0;
+    }
+    to {
+        left: 100%;
+    }
+}

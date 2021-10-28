@@ -1,0 +1,21 @@
+.skill-card-holder {
+    margin-top: 20%;
+}
+.skill-card-holder p {
+    color: var(--secondary-font-dark-color);
+    color: var(--font-red-light-color);
+    font-size: 5rem;
+}
+
+.skill-card-holder h2 {
+    color: var(--secondary-font-color);
+}
+
+@media screen and (max-width: 320px) {
+    .skill-card-holder p {
+        font-size: 3rem;
+    }
+    .skill-card-holder h2 {
+        font-size: 1.5rem;
+    }
+}
