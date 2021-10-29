@@ -11,6 +11,7 @@ const NavBar = () => {
         navRef.current.classList.toggle("active");
         navListRef.current.classList.toggle("active");
     };
+
     return (
         <>
             <div className="navbar" ref={navRef}>
@@ -25,16 +26,24 @@ const NavBar = () => {
                 <div className="navbar__items container">
                     <ul className="navbar__items__holder" ref={navListRef}>
                         <li>
-                            <Link to="/">Home</Link>
+                            <Link to="/" onClick={toggleNav}>
+                                Home
+                            </Link>
                         </li>
                         <li>
-                            <Link to="/projects">Projects</Link>
+                            <Link to="/projects" onClick={toggleNav}>
+                                Projects
+                            </Link>
                         </li>
                         <li>
-                            <Link to="/about">About</Link>
+                            <Link to="/about" onClick={toggleNav}>
+                                About
+                            </Link>
                         </li>
                         <li>
-                            <Link to="/contact">Contact</Link>
+                            <Link to="/contact" onClick={toggleNav}>
+                                Contact
+                            </Link>
                         </li>
                     </ul>
                     <div className="hamburger" onClick={toggleNav}>
