@@ -10,17 +10,19 @@ import CustomCursor from "./components/CustomCursor";
 function App() {
     return (
         <Router>
-            <CustomCursor />
+            <>
+                <CustomCursor />
 
-            <div className="nav">
-                <NavBar />
-            </div>
-            <Switch>
-                <Route path="/" exact component={Home} />
-                <Route path="/projects" exact component={Projects} />
-                <Route path="/about" exact component={About} />
-                <Route path="/contact" exact component={Contact} />
-            </Switch>
+                <div className="nav">
+                    <NavBar />
+                </div>
+                <Switch>
+                    <Route path="/" exact component={Home} />
+                    <Route path="/projects" exact component={Projects} />
+                    <Route path="/about" exact component={About} />
+                    <Route path="/contact" exact component={Contact} />
+                </Switch>
+            </>
         </Router>
     );
 }

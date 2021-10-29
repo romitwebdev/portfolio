@@ -1,76 +1,58 @@
 import "../css/Header.css";
-import React, { useRef, useEffect, useState } from "react";
+// import React, { useRef, useEffect, useState } from "react";
 import SocialLinks from "./SocailLinks";
 import { GrFacebook, GrInstagram, GrGithub } from "react-icons/gr";
 import { BsLinkedin } from "react-icons/bs";
+import TypeWriter from "typewriter-effect";
 
 const Header = () => {
-    const [currentText, setCurrentText] = useState("");
-    const [deleting, setDeleting] = useState(false);
+    // const [currentText, setCurrentText] = useState("");
+    // const [deleting, setDeleting] = useState(false);
 
-    let index = useRef(0);
-    let textIndex = useRef(0);
-
-    useEffect(() => {
-        let speed = 200;
-
-        if (!deleting) {
-            speed = 200;
-        }
-
-        setTimeout(() => {
-            let text = ["Frontend Developer", "Designer"];
-
-            if (!deleting) {
-                setCurrentText(
-                    (prevValue) =>
-                        prevValue +
-                        text[textIndex.current].charAt(index.current)
-                );
-                index.current++;
-                if (index.current === text[textIndex.current].length - 1) {
-                    setDeleting(true);
-                }
-            } else if (deleting) {
-                setCurrentText(
-                    text[textIndex.current].substr(0, index.current)
-                );
-
-                index.current--;
-                if (index.current === 0) {
-                    if (textIndex.current < text.length - 1) {
-                        textIndex.current++;
-                    } else {
-                        textIndex.current = 0;
-                    }
-                    setDeleting(false);
-                }
-            }
-        }, speed);
-
-        // return () => {
-        //     clearTimeout(timeOut);
-        // };
-    }, [currentText, deleting]);
-
-    // const dynamicRef = useRef();
+    // let index = useRef(0);
+    // let textIndex = useRef(0);
 
     // useEffect(() => {
-    //     let i = 0;
-    //     let text = "Frontend Developer";
     //     let speed = 200;
-    //     function typingText() {
-    //         dynamicRef.current.innerHTML += text.charAt(i);
-    //         if (i <= text.length - 1) {
-    //             i++;
-    //         } else {
-    //             dynamicRef.current.innerHTML = "";
-    //             i = 0;
-    //         }
-    //         setTimeout(typingText, speed);
+
+    //     if (!deleting) {
+    //         speed = 200;
     //     }
-    //     // typingText();
-    // });
+
+    //     setTimeout(() => {
+    //         let text = ["Frontend Developer", "Designer"];
+
+    //         if (!deleting) {
+    //             setCurrentText(
+    //                 (prevValue) =>
+    //                     prevValue +
+    //                     text[textIndex.current].charAt(index.current)
+    //             );
+    //             index.current++;
+    //             if (index.current === text[textIndex.current].length - 1) {
+    //                 setDeleting(true);
+    //             }
+    //         } else if (deleting) {
+    //             setCurrentText(
+    //                 text[textIndex.current].substr(0, index.current)
+    //             );
+
+    //             index.current--;
+    //             if (index.current === 0) {
+    //                 if (textIndex.current < text.length - 1) {
+    //                     textIndex.current++;
+    //                 } else {
+    //                     textIndex.current = 0;
+    //                 }
+    //                 setDeleting(false);
+    //             }
+    //         }
+    //     }, speed);
+
+    //     // return () => {
+    //     //     clearTimeout(timeOut);
+    //     // };
+    // }, [currentText, deleting]);
 
     return (
         <>
@@ -79,7 +61,17 @@ const Header = () => {
                     <p>Hi there, i am</p>
                     <h1>Romit Poudel</h1>
                     <h1>
-                        I am a <span>{currentText}</span>
+                        I am a
+                        <span>
+                            <TypeWriter
+                                options={{
+                                    strings: ["Frontend developer", "Designer"],
+                                    autoStart: true,
+                                    cursor: "_",
+                                    loop: true,
+                                }}
+                            />
+                        </span>
                     </h1>
                     <p>I code, design and optimize modern websites.</p>
                     <div className="header__social">

@@ -65,11 +65,7 @@ const Projects = () => {
                 </div>
                 <div className="content-header__projects">
                     {projects.map((prjcts) => {
-                        return (
-                            <>
-                                <AllProjects key={prjcts.id} project={prjcts} />
-                            </>
-                        );
+                        return <AllProjects key={prjcts.id} project={prjcts} />;
                     })}
                 </div>
             </div>

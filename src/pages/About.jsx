@@ -58,7 +58,7 @@ const About = () => {
                     <h1>MY SKILLSETS</h1>
                     <div className="about-container__skills__list">
                         {skillset.map((skl) => {
-                            return <AllSkillsets skillset={skl} />;
+                            return <AllSkillsets key={skl.id} skillset={skl} />;
                         })}
                     </div>
                 </div>

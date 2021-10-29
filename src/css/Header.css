@@ -21,10 +21,15 @@
 
 .header span {
     color: var(--font-red-light-color);
-    position: relative;
+    /* position: relative; */
 }
 
-.header span::before {
+.header span div {
+    display: inline-block;
+    margin-left: 0.3em;
+}
+
+/* .header span::before {
     content: "";
     width: 25px;
     height: 2px;
@@ -32,7 +37,7 @@
     position: absolute;
     left: 100%;
     bottom: 0;
-}
+} */
 
 .header__social {
     display: flex;

@@ -1,7 +1,5 @@
 import Header from "../components/Header";
-// import NavBar from "../components/NavBar";
 import ParticleBackground from "../components/ParticleBackground.jsx";
-
 import "../css/Home.css";
 
 const Home = () => {
