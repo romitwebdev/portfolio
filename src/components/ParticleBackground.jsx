@@ -5,7 +5,7 @@ import particleConfig from "../config/ParticleConfig.jsx";
 const ParticleBackground = () => {
     return (
         <Particles
-            height={window.outerHeight}
+            // height={window.outerHeight}
             params={particleConfig}
         ></Particles>
     );

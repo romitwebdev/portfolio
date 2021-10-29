@@ -190,6 +190,24 @@ textarea:valid + label::after {
     }
 }
 
+@media screen and (max-width: 812px) and (orientation: landscape) {
+    .contact-container h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .contact-container__content .text {
+        margin-right: 0.5em;
+        margin-bottom: 1em;
+        margin-top: 1em;
+        font-size: 1rem;
+        padding: 0.5em 0em;
+    }
+    .contact-container__content div h1 {
+        font-size: 1.5rem;
+    }
+}
+
 @media screen and (max-width: 480px) {
     .contact-container h1 {
         font-size: 3rem;
