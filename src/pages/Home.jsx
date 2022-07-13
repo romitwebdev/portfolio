@@ -6,11 +6,13 @@ const Home = () => {
     return (
         <>
             <div className="content-container">
-                <div className="hero">
-                    <Header />
-                </div>
-                <div className="particle">
-                    <ParticleBackground />
+                <div className="container">
+                    <div className="hero">
+                        <Header />
+                    </div>
+                    {/* <div className="particle">
+                        <ParticleBackground />
+                    </div> */}
                 </div>
             </div>
         </>

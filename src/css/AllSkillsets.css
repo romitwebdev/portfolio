@@ -1,5 +1,5 @@
 .skill-card-holder {
-    margin-top: 20%;
+    padding: 2rem 0;
 }
 .skill-card-holder p {
     color: var(--secondary-font-dark-color);
@@ -11,7 +11,7 @@
     color: var(--secondary-font-color);
 }
 
-@media screen and (max-width: 812px) and (orientation: landscape) {
+/* @media screen and (max-width: 812px) and (orientation: landscape) {
     .skill-card-holder {
         margin-top: 10%;
     }
@@ -21,25 +21,23 @@
     .skill-card-holder h2 {
         font-size: 1.2rem;
     }
-}
+} */
 
-@media screen and (max-width: 568px) and (orientation: landscape) {
-    .skill-card-holder {
-        margin-top: 10%;
-    }
+/* @media screen and (max-width: 568px) and (orientation: landscape) {
+ 
     .skill-card-holder p {
         font-size: 2rem;
     }
     .skill-card-holder h2 {
         font-size: 1rem;
     }
-}
+} */
 
-@media screen and (max-width: 320px) and (orientation: portrait) {
+@media screen and (max-width: 580px) and (orientation: portrait) {
     .skill-card-holder p {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     .skill-card-holder h2 {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 }

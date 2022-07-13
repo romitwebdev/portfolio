@@ -19,3 +19,15 @@
     color: var(--secondary-font-color);
     transform: scale(1.2);
 }
+
+@media screen and (min-width: 712px) and (orientation: portrait) {
+    .social-icons {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 280px) and (orientation: portrait) {
+    .social-icons {
+        font-size: 1rem;
+    }
+}

@@ -1,7 +1,18 @@
 .content-header {
     text-align: center;
-    margin-top: 2%;
-    overflow: hidden;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    height: calc(100vh - 7vh);
+    padding-top: 2%;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.content-header .container {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
 }
 
 .content-header__headings h1 {
@@ -14,9 +25,9 @@
 
 .content-header__projects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
     justify-content: center;
-    margin: 5% 5%;
+    margin: 2% 0;
     position: relative;
 }
 
@@ -74,7 +85,11 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
+    .content-header {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
     .content-header__projects::before {
         font-size: 8rem;
         top: -5%;
@@ -83,11 +98,28 @@
         font-size: 8rem;
         bottom: -4%;
     }
+    .content-header__projects {
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    }
+}
+
+@media screen and (max-width: 712px) {
+    .content-header__projects {
+        grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    }
 }
 
 @media screen and (max-width: 480px) {
+    .content-header {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
     .content-header__headings h1 {
-        font-size: 3.5rem;
+        font-size: 2.5rem;
+    }
+
+    .content-header__headings p {
+        font-size: 0.9rem;
     }
     .content-header__projects::before {
         font-size: 7rem;
@@ -97,13 +129,30 @@
         font-size: 7rem;
         bottom: -2%;
     }
+
+    .content-header__projects {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
 }
 
 @media screen and (max-width: 320px) {
+    .content-header {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
     .content-header__headings h1 {
         font-size: 2.5rem;
     }
     .content-header__headings p {
         font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .content-header__headings h1 {
+        font-size: 2rem;
+    }
+    .content-header__headings p {
+        font-size: 0.6rem;
     }
 }

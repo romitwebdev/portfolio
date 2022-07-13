@@ -1,11 +1,12 @@
 import "./App.css";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import NavBar from "./components/NavBar";
 import CustomCursor from "./components/CustomCursor";
+import Skills from "./pages/Skills";
 
 function App() {
     return (
@@ -16,12 +17,13 @@ function App() {
                 <div className="nav">
                     <NavBar />
                 </div>
-                <Switch>
-                    <Route path="/" exact component={Home} />
-                    <Route path="/projects" exact component={Projects} />
-                    <Route path="/about" exact component={About} />
-                    <Route path="/contact" exact component={Contact} />
-                </Switch>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/projects" element={<Projects />} />
+                    <Route path="/skills" element={<Skills />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/contact" element={<Contact />} />
+                </Routes>
             </>
         </Router>
     );

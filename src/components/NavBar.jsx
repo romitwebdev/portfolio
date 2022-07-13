@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "../css/NavBar.css";
 import { GiConqueror } from "react-icons/gi";
 import { CgMenuGridR } from "react-icons/cg";
@@ -15,39 +15,77 @@ const NavBar = () => {
     return (
         <>
             <div className="navbar" ref={navRef}>
-                <Link to="/">
-                    <div className="navbar__items logo">
-                        <div className="navbar__items__icon">
-                            <GiConqueror />
+                <div className="navbar-holder">
+                    <NavLink to="/">
+                        <div className="navbar__items logo">
+                            <div className="navbar__items__icon">
+                                <GiConqueror />
+                            </div>
+                            <h3>ROMIT</h3>
                         </div>
-                        <h3>ROMIT</h3>
-                    </div>
-                </Link>
-                <div className="navbar__items container">
-                    <ul className="navbar__items__holder" ref={navListRef}>
-                        <li>
-                            <Link to="/" onClick={toggleNav}>
-                                Home
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/projects" onClick={toggleNav}>
-                                Projects
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/about" onClick={toggleNav}>
-                                About
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/contact" onClick={toggleNav}>
-                                Contact
-                            </Link>
-                        </li>
-                    </ul>
-                    <div className="hamburger" onClick={toggleNav}>
-                        <CgMenuGridR />
+                    </NavLink>
+                    <div className="navbar__items container">
+                        <ul className="navbar__items__holder" ref={navListRef}>
+                            <li>
+                                <NavLink
+                                    to="/"
+                                    onClick={toggleNav}
+                                    className={({ isActive }) =>
+                                        isActive ? "nav-active" : ""
+                                    }
+                                >
+                                    Home
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink
+                                    to="/projects"
+                                    onClick={toggleNav}
+                                    className={({ isActive }) =>
+                                        isActive ? "nav-active" : ""
+                                    }
+                                >
+                                    Projects
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink
+                                    to="/skills"
+                                    onClick={toggleNav}
+                                    className={({ isActive }) =>
+                                        isActive ? "nav-active" : ""
+                                    }
+                                >
+                                    Skills
+                                </NavLink>
+                            </li>
+
+                            <li>
+                                <NavLink
+                                    to="/about"
+                                    onClick={toggleNav}
+                                    className={({ isActive }) =>
+                                        isActive ? "nav-active" : ""
+                                    }
+                                >
+                                    About
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink
+                                    to="/contact"
+                                    onClick={toggleNav}
+                                    className={({ isActive }) =>
+                                        isActive ? "nav-active" : ""
+                                    }
+                                >
+                                    Contact
+                                </NavLink>
+                            </li>
+                        </ul>
+                        <div className="hamburger" onClick={toggleNav}>
+                            <CgMenuGridR />
+                        </div>
                     </div>
                 </div>
             </div>

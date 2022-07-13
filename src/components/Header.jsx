@@ -1,6 +1,6 @@
 import "../css/Header.css";
 // import React, { useRef, useEffect, useState } from "react";
-import SocialLinks from "./SocailLinks";
+import SocialLinks from "./SocialLinks";
 import { GrFacebook, GrInstagram, GrGithub } from "react-icons/gr";
 import { BsLinkedin } from "react-icons/bs";
 import TypeWriter from "typewriter-effect";
@@ -124,11 +124,6 @@ const Header = () => {
 
                 <div className="header__image">
                     <img src="images/bg.png" alt="" />
-                    {/* <div className="glitch__layers">
-                        <div className="glitch__layer"></div>
-                        <div className="glitch__layer"></div>
-                        <div className="glitch__layer"></div>
-                    </div> */}
                 </div>
             </div>
         </>
