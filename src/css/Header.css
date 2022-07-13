@@ -72,7 +72,7 @@
     background: linear-gradient(
         to right,
         var(--font-red-light-color) 60%,
-        hsl(341, 91%, 43%)
+        hsl(341, 91%, 42%)
     );
 
     padding: 5rem;
