@@ -1,5 +1,5 @@
 import Header from "../components/Header";
-import ParticleBackground from "../components/ParticleBackground.jsx";
+// import ParticleBackground from "../components/ParticleBackground.jsx";
 import "../css/Home.css";
 
 const Home = () => {
@@ -10,9 +10,9 @@ const Home = () => {
                     <div className="hero">
                         <Header />
                     </div>
-                    <div className="particle">
+                    {/* <div className="particle">
                         <ParticleBackground />
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </>
