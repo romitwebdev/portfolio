@@ -10,9 +10,9 @@ const Home = () => {
                     <div className="hero">
                         <Header />
                     </div>
-                    {/* <div className="particle">
+                    <div className="particle">
                         <ParticleBackground />
-                    </div> */}
+                    </div>
                 </div>
             </div>
         </>
