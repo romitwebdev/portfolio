@@ -5,6 +5,12 @@ import { BsLinkedin } from "react-icons/bs";
 import SocialLinks from "../components/SocialLinks";
 
 const Contact = () => {
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        alert(
+            "Form is underconstruciton. Please, find the contact and social links below."
+        );
+    };
     return (
         <>
             <div className="contact-container">
@@ -14,15 +20,18 @@ const Contact = () => {
                         <div>
                             <h1>I'd Love To Hear From You</h1>
                             <p className="text">
-                                I’m interested in freelance opportunities –
-                                especially ambitious or large projects. However,
-                                if you have other request or question, don’t
-                                hesitate to use the form.
+                                I am currently exploring new opportunities, but
+                                would ideally like to find a position that would
+                                allow me to expand on my frontend development
+                                experience. However, if you have other request
+                                or question, don’t hesitate to contact me.
                             </p>
                             <p className="contact icon">
                                 <GiVibratingSmartphone />
                             </p>
-                            <p className="contact number">Call Me : 55203466</p>
+                            <p className="contact number">
+                                Call Me : +974-55203466
+                            </p>
                             <div className="header__social">
                                 <a
                                     href="https://www.facebook.com/scorpnetixz/"
@@ -70,7 +79,11 @@ const Contact = () => {
                                 </a>
                             </div>
                         </div>
-                        <form action="" className="form-control">
+                        <form
+                            action=""
+                            className="form-control"
+                            onSubmit={handleSubmit}
+                        >
                             <li>
                                 {" "}
                                 <input
@@ -79,7 +92,11 @@ const Contact = () => {
                                     className="name"
                                     required
                                 />
-                                <label htmlFor="name" className="label name">
+                                <label
+                                    htmlFor="name"
+                                    className="label name"
+                                    required
+                                >
                                     <span className="content-name">Name</span>
                                 </label>
                             </li>
@@ -90,7 +107,11 @@ const Contact = () => {
                                     className="email"
                                     required
                                 />
-                                <label htmlFor="email" className="label email">
+                                <label
+                                    htmlFor="email"
+                                    className="label email"
+                                    required
+                                >
                                     <span className="content-name">Email</span>
                                 </label>
                             </li>

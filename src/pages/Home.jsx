@@ -1,3 +1,4 @@
+import React from "react";
 import Header from "../components/Header";
 // import ParticleBackground from "../components/ParticleBackground.jsx";
 import "../css/Home.css";

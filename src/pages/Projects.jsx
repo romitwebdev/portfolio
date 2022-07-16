@@ -6,11 +6,11 @@ const Projects = () => {
     const [projects] = useState([
         {
             id: 1,
-            coverImg: "images/music.jpg",
-            title: "Music App",
+            coverImg: "images/blog.png",
+            title: "Blog Website",
             tech: "HTML, CSS, JavaScript, ReactJs",
-            link: "xyz.com",
-            gitHubUrl: "slkdf.com",
+            link: "https://myblog-romit.netlify.app/",
+            gitHubUrl: "https://github.com/romitwebdev/my-blog.git",
         },
         {
             id: 2,
@@ -20,13 +20,14 @@ const Projects = () => {
             link: "https://romit-youtube-clone.netlify.app/",
             gitHubUrl: "https://github.com/romitwebdev/youtube-clone.git",
         },
+
         {
             id: 3,
-            coverImg: "images/blog.png",
-            title: "Blog Website",
+            coverImg: "images/music.jpg",
+            title: "Music App",
             tech: "HTML, CSS, JavaScript, ReactJs",
-            link: "https://myblog-romit.netlify.app/",
-            gitHubUrl: "https://github.com/romitwebdev/my-blog.git",
+            link: "xyz.com",
+            gitHubUrl: "slkdf.com",
         },
         {
             id: 4,

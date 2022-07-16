@@ -1,59 +1,11 @@
+import React from "react";
 import "../css/Header.css";
-// import React, { useRef, useEffect, useState } from "react";
 import SocialLinks from "./SocialLinks";
 import { GrFacebook, GrInstagram, GrGithub } from "react-icons/gr";
 import { BsLinkedin } from "react-icons/bs";
 import TypeWriter from "typewriter-effect";
 
 const Header = () => {
-    // const [currentText, setCurrentText] = useState("");
-    // const [deleting, setDeleting] = useState(false);
-
-    // let index = useRef(0);
-    // let textIndex = useRef(0);
-
-    // useEffect(() => {
-    //     let speed = 200;
-
-    //     if (!deleting) {
-    //         speed = 200;
-    //     }
-
-    //     setTimeout(() => {
-    //         let text = ["Frontend Developer", "Designer"];
-
-    //         if (!deleting) {
-    //             setCurrentText(
-    //                 (prevValue) =>
-    //                     prevValue +
-    //                     text[textIndex.current].charAt(index.current)
-    //             );
-    //             index.current++;
-    //             if (index.current === text[textIndex.current].length - 1) {
-    //                 setDeleting(true);
-    //             }
-    //         } else if (deleting) {
-    //             setCurrentText(
-    //                 text[textIndex.current].substr(0, index.current)
-    //             );
-
-    //             index.current--;
-    //             if (index.current === 0) {
-    //                 if (textIndex.current < text.length - 1) {
-    //                     textIndex.current++;
-    //                 } else {
-    //                     textIndex.current = 0;
-    //                 }
-    //                 setDeleting(false);
-    //             }
-    //         }
-    //     }, speed);
-
-    //     // return () => {
-    //     //     clearTimeout(timeOut);
-    //     // };
-    // }, [currentText, deleting]);
-
     return (
         <>
             <div className="header">
@@ -123,7 +75,7 @@ const Header = () => {
                 </div>
 
                 <div className="header__image">
-                    <img src="images/bg.png" alt="" />
+                    <img src="images/bg.png" alt="" loading="lazy" />
                 </div>
             </div>
         </>
