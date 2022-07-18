@@ -2,11 +2,8 @@
     width: 100%;
     padding: 0 5rem;
     height: calc(100vh - 7vh);
-    overflow: hidden;
+    overflow: scroll;
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .content-container .container {

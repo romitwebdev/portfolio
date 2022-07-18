@@ -1,7 +1,6 @@
 .navbar {
-    padding: 0em 5rem;
     width: 100%;
-    height: 7vh;
+    height: auto;
     background-color: var(--secondary-color);
     position: sticky;
     top: 0;
@@ -15,9 +14,11 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 100%;
+    height: 7vh;
+    padding: 0em 5rem;
     max-width: 1500px;
     margin: 0 auto;
+    position: relative;
 }
 
 .navbar__items__holder {
@@ -32,7 +33,6 @@
 
 .navbar__items__holder li a {
     display: inline-block;
-    padding: 0 1rem;
     transition: all 0.4s ease;
 }
 
@@ -43,6 +43,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0 1rem;
 }
 
 .navbar__items__holder .nav-active {
@@ -64,8 +65,12 @@
     color: var(--font-red-light-color);
     cursor: pointer;
 }
+
+.navbar__items.logo h3 {
+    font-size: 1.5rem;
+}
 .navbar__items__icon {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     margin-right: 0.2rem;
     margin-top: 0.1rem;
     color: var(--primary-font-color);
@@ -78,31 +83,32 @@
 
 @media screen and (max-width: 1200px) {
     .navbar__items__icon {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     .navbar__items.logo h3 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     .navbar__items__holder li a {
         font-size: 1.4rem;
-        padding: 2.2rem 1.5rem;
     }
 
     .navbar__items__holder li {
         margin-left: 0;
+        padding: 2.2rem 1.5rem;
     }
 }
 
 @media screen and (max-width: 850px) {
-    .navbar {
+    .navbar .navbar-holder {
         padding: 0 3rem;
     }
     .navbar__items__holder {
-        position: fixed;
+        position: absolute;
         width: auto;
-        height: calc(100% - 7vh);
+        height: calc(100vh - 7vh);
+        overflow-y: scroll;
         right: -100%;
-        top: 7vh;
+        top: 100%;
         flex-direction: column;
         background-color: var(--lighter-dark-color);
         text-align: right;
@@ -119,12 +125,12 @@
     .navbar__items__holder li a {
         display: block;
         margin: 0;
-        padding: 1.5rem 5rem;
     }
     .navbar__items__holder li {
         margin-left: 0;
         width: 100%;
         height: auto;
+        padding: 2rem 3.5rem;
     }
     .hamburger {
         display: block;
@@ -139,8 +145,8 @@
 }
 
 @media screen and (max-width: 480px) {
-    .navbar {
-        padding: 1rem 1rem;
+    .navbar .navbar-holder {
+        padding: 0 1rem;
     }
     .navbar__items.logo h3 {
         font-size: 1.5rem;
@@ -151,6 +157,7 @@
 
     .navbar__items__holder li {
         margin-left: 0;
+        padding: 1.5rem 3.5rem;
     }
     .navbar__items.logo h3 {
         font-size: 1.3rem;
@@ -158,8 +165,8 @@
 }
 
 @media screen and (max-width: 280px) {
-    .navbar {
-        padding: 1rem 1rem;
+    .navbar .navbar-holder {
+        padding: 0 1rem;
     }
     .navbar__items.logo h3 {
         font-size: 1.5rem;
@@ -170,23 +177,61 @@
 
     .navbar__items__holder li {
         margin-left: 0;
+        padding: 1.5rem 3.5rem;
     }
     .navbar__items.logo h3 {
         font-size: 1.3rem;
     }
 }
 
-@media screen and (max-width: 812px) and (orientation: landscape) {
+@media screen and (max-width: 960px) and (orientation: landscape) {
+    .navbar .navbar-holder {
+        height: 10vh;
+    }
+
     .navbar__items.logo h3 {
-        font-size: 0.9rem;
+        font-size: 1.5rem;
+    }
+    .navbar__items__icon {
+        font-size: 2rem;
+    }
+    .navbar__items__holder li a {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 860px) and (orientation: landscape) {
+    .navbar .navbar-holder {
+        height: auto;
+    }
+
+    .navbar__items__holder li {
+        height: 100%;
+        padding: 1rem 1.3rem;
+    }
+    .navbar__items.logo h3 {
+        font-size: 1.4rem;
+    }
+}
+@media screen and (max-width: 850px) and (orientation: landscape) {
+    .navbar__items__holder li {
+        height: auto;
+        padding: 1.2rem 3.5rem;
+    }
+}
+
+@media screen and (max-width: 660px) and (orientation: landscape) {
+    .navbar__items__holder li {
+        height: auto;
+        padding: 0.8rem 3.5rem;
     }
 }
 
 @media screen and (max-width: 568px) and (orientation: landscape) {
     .navbar__items.logo h3 {
-        font-size: 1rem;
+        font-size: 1.4rem;
     }
     .navbar__items__icon {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 }

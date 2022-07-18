@@ -1,36 +1,6 @@
 import "../css/About.css";
-import { useState } from "react";
-import AllSkillsets from "../components/AllSkillsets.jsx";
-import { RiReactjsFill } from "react-icons/ri";
-import { SiJavascript, SiCss3, SiHtml5 } from "react-icons/si";
 
 const About = () => {
-    const [skillset] = useState([
-        {
-            id: 0,
-            name: "HTML",
-            logo: <SiHtml5 />,
-            percentage: 90,
-        },
-        {
-            id: 1,
-            name: "CSS",
-            logo: <SiCss3 />,
-            percentage: 90,
-        },
-        {
-            id: 3,
-            name: "JavaScript",
-            logo: <SiJavascript />,
-            percentage: 50,
-        },
-        {
-            id: 4,
-            name: "ReactJS",
-            logo: <RiReactjsFill />,
-            percentage: 50,
-        },
-    ]);
     return (
         <>
             <div className="about-container">

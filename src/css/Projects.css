@@ -1,7 +1,6 @@
 .content-header {
     text-align: center;
     overflow-y: scroll;
-    overflow-x: hidden;
     width: 100%;
     height: calc(100vh - 7vh);
     padding-top: 2%;
@@ -154,5 +153,17 @@
     }
     .content-header__headings p {
         font-size: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 960px) and (orientation: landscape) {
+    .content-header__projects {
+        grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    }
+}
+
+@media screen and (max-width: 570px) and (orientation: landscape) {
+    .content-header__projects {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
     }
 }

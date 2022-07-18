@@ -7,6 +7,9 @@
     --secondary-font-dark-color: hsl(215, 0%, 70%);
     --font-red-light-color: hsl(341, 99%, 52%);
 }
+html {
+    overflow-x: hidden;
+}
 
 *,
 *:before,
@@ -24,6 +27,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     background: var(--primary-color);
     color: var(--primary-font-color);
+    overflow: hidden;
 }
 
 code {

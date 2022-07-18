@@ -1,7 +1,7 @@
 .social-icons {
     background: var(--primary-color);
-    width: 2.3em;
-    height: 2.3em;
+    width: 3rem;
+    height: 3rem;
     font-size: 1.2rem;
     color: var(--secondary-font-dark-color);
     display: flex;
@@ -20,14 +20,18 @@
     transform: scale(1.2);
 }
 
-@media screen and (min-width: 712px) and (orientation: portrait) {
-    .social-icons {
-        font-size: 1.5rem;
-    }
-}
-
 @media screen and (min-width: 280px) and (orientation: portrait) {
     .social-icons {
         font-size: 1rem;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 712px) and (orientation: portrait) {
+    .social-icons {
+        font-size: 1.2rem;
+        width: 3rem;
+        height: 3rem;
     }
 }
