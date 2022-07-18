@@ -106,6 +106,7 @@
         position: absolute;
         width: auto;
         height: calc(100vh - 7vh);
+        z-index: -1;
         overflow-y: scroll;
         right: -100%;
         top: 100%;
@@ -203,6 +204,11 @@
 @media screen and (max-width: 860px) and (orientation: landscape) {
     .navbar .navbar-holder {
         height: auto;
+        height: 10vh;
+    }
+
+    .navbar__items__holder {
+        height: calc(100vh - 10vh);
     }
 
     .navbar__items__holder li {
