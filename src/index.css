@@ -8,7 +8,7 @@
     --font-red-light-color: hsl(341, 99%, 52%);
 }
 html {
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 *,
