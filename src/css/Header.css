@@ -63,10 +63,6 @@
         var(--font-red-light-color) 60%,
         hsl(341, 86%, 45%)
     );
-
-    padding: 5rem;
-    padding-bottom: 0;
-    padding-right: 0;
 }
 .header__image img {
     display: block;
