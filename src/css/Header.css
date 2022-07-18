@@ -210,6 +210,12 @@
     }
 }
 
+@media screen and (min-width: 0px) and (orientation: landscape) {
+    .header__item {
+        margin-bottom: 1%;
+    }
+}
+
 @media screen and (min-width: 1200px) and (orientation: landscape) {
     .header {
         flex-direction: row;
