@@ -39,6 +39,7 @@
 .navbar__items__holder li a {
     display: inline-block;
     transition: all 0.4s ease;
+    font-size: 1.1rem;
 }
 
 /* style for list and height of navbar is exact the  height of list */
