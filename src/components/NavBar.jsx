@@ -7,9 +7,11 @@ import React, { useRef } from "react";
 const NavBar = () => {
     const navRef = useRef();
     const navListRef = useRef();
+
     const toggleNav = () => {
-        navRef.current.classList.toggle("active");
+        // show and hide the nav items sidebar when clicked on ham menu
         navListRef.current.classList.toggle("active");
+        // navRef.current.classList.toggle("active");
     };
 
     return (

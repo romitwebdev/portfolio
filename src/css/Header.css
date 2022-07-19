@@ -1,3 +1,4 @@
+/* keeps the landing page's text and main image side by side */
 .header {
     display: flex;
     align-items: center;
@@ -8,6 +9,7 @@
     margin: 0 auto;
 }
 
+/* styling for text in landing page */
 .header p {
     font-size: 1.1rem;
     color: var(--secondary-font-dark-color);
@@ -25,6 +27,7 @@
     font-size: 3rem;
 }
 
+/* style for the typewriter animated text */
 .header span {
     color: var(--font-red-light-color);
 }
@@ -34,6 +37,7 @@
     margin-left: 0.3em;
 }
 
+/* style for social icons */
 .header__social {
     display: flex;
     align-items: center;
@@ -44,6 +48,7 @@
     margin-right: 1.5rem;
 }
 
+/* style for the text container of landing page */
 .header__item {
     width: 60%;
     height: 100%;
@@ -53,6 +58,7 @@
     padding-bottom: 5%;
 }
 
+/* style for the image container of landing page */
 .header__image {
     height: auto;
     width: 40%;
@@ -71,7 +77,9 @@
     object-fit: contain;
 }
 
+/* style for different screen sizes */
 @media screen and (min-width: 0px) {
+    /* keeps image below the text */
     .header {
         flex-direction: column;
         align-items: center;
@@ -86,10 +94,12 @@
     }
     .header__item {
         width: 100%;
+        height: 50%;
     }
 
     .header__image {
-        width: 100%;
+        width: 50%;
+        height: auto;
     }
     .header p {
         font-size: 0.7rem;
@@ -153,6 +163,8 @@
     }
 }
 
+/* styling for landscape screen */
+
 @media screen and (max-width: 1200px) and (orientation: landscape) {
     .header {
         flex-direction: row;
@@ -209,6 +221,10 @@
 @media screen and (min-width: 0px) and (orientation: landscape) {
     .header__item {
         margin-bottom: 2%;
+    }
+
+    .header__image {
+        width: 75%;
     }
 }
 

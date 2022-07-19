@@ -1,3 +1,4 @@
+/* style for card of project page */
 .card-holder {
     background-color: var(--secondary-font-color);
     padding: 0.6rem;
@@ -7,11 +8,13 @@
     text-align: left;
 }
 
+/* style for image inside card */
 .card-holder img {
     width: 100%;
     height: 10rem;
 }
 
+/* color for the text inside card */
 .card-holder h2,
 p,
 p span,
@@ -35,6 +38,7 @@ a {
     font-weight: bold;
 }
 
+/* keep side by side each button (goto website button and source code button */
 .button-holder {
     display: flex;
     align-items: center;
@@ -43,6 +47,7 @@ a {
     position: relative;
 }
 
+/* styling for button */
 .button-holder .btn {
     width: 100%;
     padding: 0.8rem 0.6rem;
@@ -55,6 +60,8 @@ a {
     background-color: none;
     font-size: 1rem;
 }
+
+/* makes whole anchor tag clickable */
 .button-holder .btn a {
     width: 100%;
     height: 100%;
@@ -64,6 +71,8 @@ a {
 span {
     color: var(--secondary-font-color);
 }
+
+/* keeps  text and icon inside button side by side*/
 .button-holder .btn a {
     display: flex;
     flex-direction: row;
@@ -71,6 +80,7 @@ span {
     justify-content: space-around;
 }
 
+/* align icon perfectly to the text inside the button */
 .button-holder .btn a span {
     display: flex;
     align-items: center;
@@ -80,6 +90,7 @@ span {
     margin-right: none;
 }
 
+/* curtain animation inside the button */
 .button-holder a::before {
     content: "";
     position: absolute;
@@ -101,6 +112,7 @@ span {
     transform: scaleX(1);
 }
 
+/* style for different devices */
 @media screen and (min-width: 720px) {
     .card-holder {
         margin: 1rem;

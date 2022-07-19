@@ -1,3 +1,4 @@
+/* style for skill container */
 .skills-container {
     text-align: center;
     overflow-x: hidden;
@@ -5,6 +6,8 @@
     width: 100%;
     padding: 0 5rem;
 }
+
+/* style for container it sets the fix width for bigger screen thant max width */
 
 .skills-container .container {
     width: 100%;
@@ -22,6 +25,7 @@
     font-size: 3.5rem;
 }
 
+/* display the skill icons in grid layout */
 .about-container__skills__list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
@@ -30,6 +34,7 @@
     padding: 1rem 0;
 }
 
+/* animation for heading */
 .about-container__skills h1 {
     animation-name: skillAboutAnim;
     animation-duration: 2s;
@@ -46,6 +51,7 @@
     }
 }
 
+/* style for different screen sizes */
 @media screen and (max-width: 850px) {
     .skills-container {
         padding: 0 3rem;
@@ -53,6 +59,7 @@
 }
 
 @media screen and (max-width: 712px) {
+    /* adjust grid size */
     .about-container__skills__list {
         grid-template-columns: repeat(auto-fill, minmax(33.33%, 1fr));
     }
@@ -65,18 +72,21 @@
     .about-container__skills h1 {
         font-size: 2rem;
     }
+    /* adjust grid size */
     .about-container__skills__list {
         grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
     }
 }
 
 @media screen and (max-width: 960px) and (orientation: landscape) {
+    /* adjust grid size */
     .about-container__skills__list {
         grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
     }
 }
 
 @media screen and (max-width: 560px) and (orientation: landscape) {
+    /* adjust grid size */
     .about-container__skills__list {
         grid-template-columns: repeat(auto-fill, minmax(33.33%, 1fr));
     }

@@ -3,6 +3,7 @@ import AllProjects from "../components/AllProjects.jsx";
 import "../css/Projects.css";
 
 const Projects = () => {
+    // object for cards
     const [projects] = useState([
         {
             id: 1,
@@ -56,6 +57,7 @@ const Projects = () => {
                         <p>A small gallery of recent projects choosen by me.</p>
                     </div>
                     <div className="content-header__projects">
+                        {/* projects details is passed to Allprojects component as props */}
                         {projects.map((prjcts) => {
                             return (
                                 <AllProjects key={prjcts.id} project={prjcts} />

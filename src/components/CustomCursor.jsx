@@ -2,6 +2,8 @@ import "../css/CustomCursor.css";
 import { useRef, useEffect } from "react";
 const CustomCursor = () => {
     const cursorRef = useRef();
+
+    // makes the circle around mouse pointer
     useEffect(() => {
         document.addEventListener("mousemove", (e) => {
             const { clientX, clientY } = e;

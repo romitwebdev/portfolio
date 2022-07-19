@@ -1,3 +1,4 @@
+/* style for contact container */
 .contact-container {
     padding-top: 2%;
     width: 100%;
@@ -7,6 +8,7 @@
     padding-right: 5rem;
 }
 
+/* style for container it sets the fix width for bigger screen thant max width */
 .contact-container .container {
     width: 100%;
     max-width: 1500px;
@@ -18,6 +20,7 @@
     text-align: center;
 }
 
+/* style for paragraph  */
 .contact-container__content .text {
     color: var(--secondary-font-color);
     text-align: left;
@@ -27,6 +30,8 @@
     font-size: 1.2rem;
     padding: 1rem 0rem;
 }
+
+/* keeps form and other paragraph conent side by side */
 .contact-container__content {
     display: flex;
     align-items: flex-start;
@@ -34,11 +39,13 @@
     padding: 5% 0;
 }
 
+/* style for content heading */
 .contact-container__content div h1 {
     text-align: left;
     font-size: 2rem;
 }
 
+/* flex pargaraph div and form div  */
 .contact-container__content div {
     padding: 1rem 0;
     flex: 1;
@@ -48,10 +55,13 @@
     flex: 1;
 }
 
+/* style for mobile phone icon */
 .contact-container__content .contact {
     color: var(--secondary-font-color);
     margin-bottom: 0.5rem;
 }
+
+/* style for form */
 form {
     padding: 1rem 0;
     overflow: hidden;
@@ -71,6 +81,7 @@ form li {
     margin-bottom: 1rem;
 }
 
+/* style the input and text area */
 input[type="text"],
 textarea {
     background: var(--lighter-dark-color);
@@ -89,9 +100,7 @@ textarea {
     padding: 1rem 1rem;
 }
 
-.input-control {
-    display: flex;
-}
+/* animation for input and text area focus */
 
 li {
     position: relative;
@@ -155,6 +164,7 @@ textarea:valid + label::after {
     left: 0;
 }
 
+/* style for button and curtain effect */
 .submit-btn {
     background: none;
     color: var(--secondary-font-color);
@@ -184,6 +194,7 @@ textarea:valid + label::after {
     transform: scaleX(1);
 }
 
+/* animation for contact container heading */
 .contact-container .container > h1 {
     animation-name: contactHeadingAnim;
     animation-duration: 2s;
@@ -200,6 +211,7 @@ textarea:valid + label::after {
     }
 }
 
+/* style for different screen sizes */
 @media screen and (max-width: 850px) {
     .contact-container {
         padding-left: 3rem;
@@ -208,6 +220,7 @@ textarea:valid + label::after {
 }
 
 @media screen and (max-width: 768px) {
+    /* keeps form below the paragarph div */
     .contact-container__content {
         flex-direction: column;
     }

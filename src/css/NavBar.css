@@ -1,3 +1,5 @@
+/* style for navbar height of navbar is excat to list*/
+
 .navbar {
     width: 100%;
     height: auto;
@@ -7,26 +9,29 @@
     left: 0;
     right: 0;
     z-index: 2;
+    padding: 0em 5rem;
 }
 
+/* style for navbar holder  */
 .navbar .navbar-holder {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
     height: 7vh;
-    padding: 0em 5rem;
     max-width: 1500px;
     margin: 0 auto;
     position: relative;
 }
 
+/* nav links holder */
 .navbar__items__holder {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+/* style for anchor tag */
 .navbar__items__holder a {
     color: var(--secondary-font-color);
 }
@@ -36,6 +41,7 @@
     transition: all 0.4s ease;
 }
 
+/* style for list and height of navbar is exact the  height of list */
 .navbar__items__holder li {
     margin-left: 2rem;
     text-align: center;
@@ -58,6 +64,7 @@
     background: var(--primary-color);
 }
 
+/* style for navbar logo */
 .navbar__items.logo {
     display: flex;
     align-items: center;
@@ -75,12 +82,15 @@
     margin-top: 0.1rem;
     color: var(--primary-font-color);
 }
+
+/* style for hambugrger menu */
 .hamburger {
     display: none;
     font-size: 1.3rem;
     color: var(--secondary-font-color);
 }
 
+/* styel for different size of screen sizes */
 @media screen and (max-width: 1200px) {
     .navbar__items__icon {
         font-size: 2.5rem;
@@ -99,9 +109,13 @@
 }
 
 @media screen and (max-width: 850px) {
+    .navbar {
+        padding: 0;
+    }
     .navbar .navbar-holder {
         padding: 0 3rem;
     }
+    /* style for sidebar */
     .navbar__items__holder {
         position: absolute;
         width: auto;

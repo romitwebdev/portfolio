@@ -13,6 +13,7 @@ import { FaBootstrap, FaFigma, FaSass } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
 
 const Skills = () => {
+    // object for cards
     const [skillset] = useState([
         {
             id: 0,
@@ -82,6 +83,7 @@ const Skills = () => {
                     <div className="about-container__skills">
                         <h1>MY SKILLSETS</h1>
                         <div className="about-container__skills__list">
+                            {/* skills details is passed to AllSkillsets component as props */}
                             {skillset.map((skl) => {
                                 return (
                                     <AllSkillsets key={skl.id} skillset={skl} />

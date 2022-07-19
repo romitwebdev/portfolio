@@ -1,3 +1,4 @@
+/* style for social icons */
 .social-icons {
     background: var(--primary-color);
     width: 3rem;
@@ -20,6 +21,7 @@
     transform: scale(1.2);
 }
 
+/* style for different screen sizes */
 @media screen and (min-width: 280px) and (orientation: portrait) {
     .social-icons {
         font-size: 1rem;

@@ -5,6 +5,7 @@ import { BsLinkedin } from "react-icons/bs";
 import SocialLinks from "../components/SocialLinks";
 
 const Contact = () => {
+    // display message on form submit
     const handleSubmit = (e) => {
         e.preventDefault();
         alert(
@@ -17,6 +18,7 @@ const Contact = () => {
                 <div className="container">
                     <h1>CONTACT ME</h1>
                     <div className="contact-container__content">
+                        {/* heading, paragraph, social icons section */}
                         <div>
                             <h1>I'd Love To Hear From You</h1>
                             <p className="text">
@@ -79,6 +81,8 @@ const Contact = () => {
                                 </a>
                             </div>
                         </div>
+
+                        {/* form section */}
                         <form
                             action=""
                             className="form-control"

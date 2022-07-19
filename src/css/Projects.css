@@ -1,3 +1,5 @@
+/* style for projects page */
+/* style for content header */
 .content-header {
     text-align: center;
     overflow-y: scroll;
@@ -8,6 +10,7 @@
     padding-right: 5rem;
 }
 
+/* style for container it sets the fix width for bigger screen thant max width */
 .content-header .container {
     width: 100%;
     max-width: 1500px;
@@ -22,6 +25,7 @@
     color: var(--secondary-font-dark-color);
 }
 
+/* display the card in grid layout */
 .content-header__projects {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
@@ -30,6 +34,7 @@
     position: relative;
 }
 
+/* style for water mark */
 .content-header__projects::before {
     content: "WORK";
     position: absolute;
@@ -52,6 +57,7 @@
     z-index: -1;
 }
 
+/* style for heading animation */
 .content-header__headings .heading_text {
     animation-name: headingAnim;
     animation-duration: 2s;
@@ -84,6 +90,7 @@
     }
 }
 
+/* style for different screen sizes */
 @media screen and (max-width: 850px) {
     .content-header {
         padding-left: 3rem;
@@ -97,6 +104,7 @@
         font-size: 8rem;
         bottom: -4%;
     }
+    /* adjust grid size */
     .content-header__projects {
         grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     }
@@ -104,6 +112,7 @@
 
 @media screen and (max-width: 712px) {
     .content-header__projects {
+        /* adjust grid size */
         grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
     }
 }
@@ -130,6 +139,8 @@
     }
 
     .content-header__projects {
+        /* adjust grid size */
+
         grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
     }
 }
@@ -158,12 +169,16 @@
 
 @media screen and (max-width: 960px) and (orientation: landscape) {
     .content-header__projects {
+        /* adjust grid size */
+
         grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
     }
 }
 
 @media screen and (max-width: 570px) and (orientation: landscape) {
     .content-header__projects {
+        /* adjust grid size */
+
         grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
     }
 }
