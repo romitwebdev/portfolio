@@ -6,7 +6,7 @@ const Projects = () => {
     // object for cards
     const [projects] = useState([
         {
-            id: 1,
+            id: 0,
             coverImg: "images/blog.png",
             title: "Blog Website",
             tech: "HTML, CSS, JavaScript, ReactJs",
@@ -14,33 +14,32 @@ const Projects = () => {
             gitHubUrl: "https://github.com/romitwebdev/my-blog.git",
         },
         {
-            id: 2,
+            id: 1,
             coverImg: "images/ytclone.png",
-            title: "youTube clone",
+            title: "YouTube Clone",
             tech: "HTML, SCSS, ReactJs, TypeScript",
             link: "https://romit-youtube-clone.netlify.app/",
             gitHubUrl: "https://github.com/romitwebdev/youtube-clone.git",
         },
 
         {
+            id: 2,
+            coverImg: "images/tiktokclone.png",
+            title: "TikTok Clone",
+            tech: "HTML, SCSS, ReactJs, TypeScript",
+            link: "https://romit-tiktok-clone.netlify.app/",
+            gitHubUrl: "https://github.com/romitwebdev/tiktok-clone",
+        },
+        {
             id: 3,
             coverImg: "images/music.jpg",
-            title: "Music App",
+            title: "counter App",
             tech: "HTML, CSS, JavaScript, ReactJs",
             link: "xyz.com",
             gitHubUrl: "slkdf.com",
         },
         {
             id: 4,
-            coverImg: "images/music.jpg",
-            title: "counter App",
-            tech: "HTML, CSS, JavaScript, ReactJs",
-
-            link: "xyz.com",
-            gitHubUrl: "slkdf.com",
-        },
-        {
-            id: 5,
             coverImg: "images/music.jpg",
             title: "counter App",
             tech: "HTML, CSS, JavaScript, ReactJs",
