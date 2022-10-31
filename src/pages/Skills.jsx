@@ -8,6 +8,7 @@ import {
     SiHtml5,
     SiAdobephotoshop,
     SiGit,
+    SiNextdotjs,
 } from "react-icons/si";
 import { FaBootstrap, FaFigma, FaSass } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
@@ -53,24 +54,30 @@ const Skills = () => {
         },
         {
             id: 7,
+            name: "NextJS",
+            logo: <SiNextdotjs />,
+            percentage: 50,
+        },
+        {
+            id: 8,
             name: "Figma",
             logo: <FaFigma />,
             percentage: 50,
         },
         {
-            id: 8,
+            id: 9,
             name: "Photoshop",
             logo: <SiAdobephotoshop />,
             percentage: 50,
         },
         {
-            id: 9,
+            id: 10,
             name: "Git",
             logo: <SiGit />,
             percentage: 50,
         },
         {
-            id: 10,
+            id: 11,
             name: "Github",
             logo: <AiFillGithub />,
             percentage: 50,
