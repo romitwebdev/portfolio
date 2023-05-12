@@ -32,7 +32,7 @@ const Contact = () => {
                                 <GiVibratingSmartphone />
                             </p>
                             <p className="contact number">
-                                Call Me : +974-55203466
+                                Call Me : +351-920290195
                             </p>
                             <div className="header__social">
                                 <a
