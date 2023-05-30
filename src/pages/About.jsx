@@ -12,15 +12,19 @@ const About = () => {
                                 <img src="images/about.jpeg" alt="" />
                             </div>
                             <p>
-                                Hi! I am Romit Poudel, a self-taught passionate
-                                frontend web developer and designer focused on
-                                crafting great web experiences. Designing and
-                                Coding have been my passion since the days I
-                                started working with computers but I found
-                                myself into web design/development since 2019. I
-                                focus on writing clean, elegant and efficient
-                                code. I enjoy creating beautifully designed,
-                                intuitive and functional websites.
+                                I'm Romit Poudel, a passionate frontend web
+                                developer and designer. Through diligent
+                                self-study, I've cultivated my skills across
+                                various projects. Now, I aspire to gain
+                                professional experience to further refine my
+                                expertise, collaborate with industry veterans,
+                                and embrace best practices. I prioritize
+                                crafting visually captivating and user-friendly
+                                websites. My aim is to leave a lasting
+                                impression, contribute to successful teams, and
+                                deliver exceptional results. Feel free to
+                                explore my work and reach out for inquiries or
+                                collaboration opportunities. Thank you!
                             </p>
                         </div>
                     </div>

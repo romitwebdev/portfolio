@@ -9,8 +9,10 @@ import {
     SiAdobephotoshop,
     SiGit,
     SiNextdotjs,
+    SiMongodb,
+    SiExpress,
 } from "react-icons/si";
-import { FaBootstrap, FaFigma, FaSass } from "react-icons/fa";
+import { FaBootstrap, FaFigma, FaSass, FaNodeJs } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
 
 const Skills = () => {
@@ -60,26 +62,46 @@ const Skills = () => {
         },
         {
             id: 8,
-            name: "Figma",
-            logo: <FaFigma />,
+            name: "MongoDB",
+            logo: <SiMongodb />,
             percentage: 50,
         },
+
         {
             id: 9,
-            name: "Photoshop",
-            logo: <SiAdobephotoshop />,
+            name: "ExpressJS",
+            logo: <SiExpress />,
+            percentage: 50,
+        },
+
+        {
+            id: 10,
+            name: "NodeJS",
+            logo: <FaNodeJs />,
             percentage: 50,
         },
         {
-            id: 10,
+            id: 11,
             name: "Git",
             logo: <SiGit />,
             percentage: 50,
         },
         {
-            id: 11,
+            id: 12,
             name: "Github",
             logo: <AiFillGithub />,
+            percentage: 50,
+        },
+        {
+            id: 13,
+            name: "Figma",
+            logo: <FaFigma />,
+            percentage: 50,
+        },
+        {
+            id: 14,
+            name: "Photoshop",
+            logo: <SiAdobephotoshop />,
             percentage: 50,
         },
     ]);
